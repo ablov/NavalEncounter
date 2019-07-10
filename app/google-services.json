@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1052415538858",
+    "firebase_url": "https://navalencounter.firebaseio.com",
+    "project_id": "navalencounter",
+    "storage_bucket": "navalencounter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052415538858:android:cd858f5d181cc956",
+        "android_client_info": {
+          "package_name": "ru.ablov.navalencounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052415538858-djfv7k9k9sj4rhk5tdr0cv2einpjgtha.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.ablov.navalencounter",
+            "certificate_hash": "760185f37b6a02c3fa931bf22e907be5b10bee1f"
+          }
+        },
+        {
+          "client_id": "1052415538858-c4ujlf1ijfgdmoif5rnk4nh5ppg9lur8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.ablov.navalencounter",
+            "certificate_hash": "94c8ca66930c28490e9de4e8f083fd736acce4d6"
+          }
+        },
+        {
+          "client_id": "1052415538858-2pmec1pf8jmllddpq649k8m88nmie9lt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPrVAciCy7bBzI_nS3Zh-RZbMz7-av5EU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052415538858-2pmec1pf8jmllddpq649k8m88nmie9lt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

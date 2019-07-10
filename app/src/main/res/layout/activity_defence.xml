@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DefenceActivity">
+    <TextView
+        android:id="@+id/d_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:padding="16dp"
+        android:text="@string/under_attack"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/d_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/d_title">
+
+        <ImageView
+            android:id="@+id/d_game_field"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/gamefield"
+            app:srcCompat="@drawable/gamefield" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

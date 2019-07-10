@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="0dp"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    tools:context=".NewGameActivity">
+
+    <FrameLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/game_field"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/gamefield"
+            app:srcCompat="@drawable/gamefield" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageOne1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/one" />
+
+    <ImageView
+        android:id="@+id/imageOne2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/one" />
+
+    <ImageView
+        android:id="@+id/imageOne3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/one" />
+
+    <ImageView
+        android:id="@+id/imageOne4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/one" />
+
+    <ImageView
+        android:id="@+id/imageTwo1"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/twohr" />
+
+    <ImageView
+        android:id="@+id/imageTwo2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/twohr" />
+
+    <ImageView
+        android:id="@+id/imageTwo3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/twohr" />
+
+    <ImageView
+        android:id="@+id/imageThree1"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/threehr" />
+
+    <ImageView
+        android:id="@+id/imageThree2"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="75dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/threehr" />
+
+    <ImageView
+        android:id="@+id/imageFour"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/ship"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main"
+        app:srcCompat="@drawable/fourhr" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/submit"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

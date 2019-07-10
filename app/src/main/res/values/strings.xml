@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Naval Encounter</string>
+    <string name="title">Naval Encounter</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_user">Create new user</string>
+    <string name="register">Register…</string>
+    <string name="gamefield">GameField</string>
+    <string name="ship">Ship</string>
+    <string name="submit">Play!</string>
+    <string name="nickname">Nickname</string>
+    <string name="password2">Re-type password</string>
+    <string name="btn_action">Attack!</string>
+    <string name="gamer_status">Preparing…</string>
+    <string name="attack">Attack!</string>
+    <string name="saved_email">Saved Email</string>
+    <string name="saved_password">Saved Password</string>
+    <string name="fire">Fire!</string>
+    <string name="your_turn">Your turn</string>
+    <string name="under_attack">You are under attack!</string>
+    <string name="foresight">Foresight</string>
+    <string name="you_lost">You lost... :(</string>
+</resources>
