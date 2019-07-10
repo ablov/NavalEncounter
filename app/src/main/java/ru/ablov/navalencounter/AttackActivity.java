@@ -233,7 +233,7 @@ public class AttackActivity extends AppCompatActivity {
         iv = new ImageView(getApplicationContext());
         if (state == NM_EMPTY) {
             iv.setImageDrawable(getDrawable(R.drawable.tried));
-        } else if (state == NM_KNOCKED) {
+        } else if (state <= NM_KNOCKED && state >= NM_KILLED_4V) {  // Все "убойные" константы меньше нуля!
             iv.setImageDrawable(getDrawable(R.drawable.hitted));
         }
         rl.addView(iv);
@@ -459,7 +459,20 @@ public class AttackActivity extends AppCompatActivity {
                         // Обработка выигрыша
                         //
                     if (gamer.getState().equals(GAMER_WIN)) {
-                        // ToDo: обработка выигрыша
+
+                        // Снимаем обработчик событий
+                        mGamersDatabase.removeEventListener(this);
+
+                        // Обнуляем файлы
+                        new LocalData().clearData();
+
+                        // Переходим на прощальную Activity
+                        Intent intent = new Intent(AttackActivity.this, WinActivity.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                        finish();
+
+
                     }
                 }
             }

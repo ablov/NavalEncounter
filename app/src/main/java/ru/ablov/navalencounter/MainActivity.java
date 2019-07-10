@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
         register_btn = findViewById(R.id.create_btn);
 
         // Проверяем, есть ли сохранённые email и password и инициализируем поля
-        SharedPreferences sharedPref = MainActivity.this.getPreferences(Context.MODE_PRIVATE);
+        Context ctx = getApplicationContext();
+        SharedPreferences sharedPref = ctx.getSharedPreferences(getString(R.string.credentials) ,Context.MODE_PRIVATE);
         String savedEmail = sharedPref.getString(getString(R.string.saved_email), "");
         String savedPassword = sharedPref.getString(getString(R.string.saved_password), "");
         email.setText(savedEmail);
@@ -87,7 +88,8 @@ public class MainActivity extends AppCompatActivity {
                         // Вход в игру
                             progress.dismiss();
                             // Сохраняем текущий e-mail и password
-                            SharedPreferences sharedPref = MainActivity.this.getPreferences(Context.MODE_PRIVATE);
+                            Context ctx = getApplicationContext();
+                            SharedPreferences sharedPref = ctx.getSharedPreferences(getString(R.string.credentials), Context.MODE_PRIVATE);
                             SharedPreferences.Editor editor = sharedPref.edit();
                             editor.putString(getString(R.string.saved_email), emailS);
                             editor.putString(getString(R.string.saved_password), passwdS);

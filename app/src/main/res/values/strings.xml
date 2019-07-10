@@ -2,6 +2,7 @@
     <string name="app_name">Naval Encounter</string>
     <string name="title">Naval Encounter</string>
     <string name="email">Email</string>
+    <string name="credentials">Credentials</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="new_user">Create new user</string>
@@ -21,4 +22,5 @@
     <string name="under_attack">You are under attack!</string>
     <string name="foresight">Foresight</string>
     <string name="you_lost">You lost... :(</string>
+    <string name="you_win">You Win!!!</string>
 </resources>

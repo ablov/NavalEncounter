@@ -285,6 +285,7 @@ public class DefenceActivity extends AppCompatActivity {
                 // Устанавливаем выигрыш партнёра и свой проигрыш
                 mGamersDatabase.child(partnerID).child("state").setValue(GAMER_WIN);
                 mGamersDatabase.child(currentUserID).child("state").setValue(GAMER_LOST);
+                mGamersDatabase.keepSynced(true);
 
                 // Обнуляем файлы
                 new LocalData().clearData();
